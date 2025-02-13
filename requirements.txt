@@ -48,6 +48,7 @@ fonttools==4.50.0
 frozenlist==1.4.1
 fsspec==2024.3.1
 gdown==5.1.0
+gensim==4.3.3
 gitdb==4.0.11
 GitPython==3.1.42
 google-ai-generativelanguage==0.6.2
@@ -126,6 +127,7 @@ orjson==3.9.15
 packaging==23.2
 pandas==2.2.1
 parso==0.8.4
+patsy==1.0.1
 pdfminer==20191125
 pdfminer.six==20231228
 pdfrw==0.4
@@ -188,6 +190,7 @@ SQLAlchemy==2.0.28
 srsly==2.4.8
 st-annotated-text==4.0.1
 stack-data==0.6.3
+statsmodels==0.14.4
 streamlit==1.32.2
 streamlit-camera-input-live==0.2.0
 streamlit-card==1.0.0
