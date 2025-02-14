@@ -4,7 +4,12 @@ from agents.analysis import AnalysisAgent
 from agents.innovation import InnovationAgent
 from utils.messaging import MessageBus
 import time
+import sys
+import os
+from pathlib import Path
 
+# Add project root to Python path
+sys.path.append(str(Path(__file__).parent))
 def main():
     logging.basicConfig(level=logging.INFO)
     
@@ -14,11 +19,13 @@ def main():
     analysis_agent = AnalysisAgent()
     innovation_agent = InnovationAgent()
     
+    
     while True:
         try:
             # Research Phase
             news_data = research_agent.fetch_data()
             message_bus.post('analysis', news_data)
+            print(news_data)
             
             # Analysis Phase
             raw_data = message_bus.get('analysis')
